@@ -1,14 +1,16 @@
 # 当前状态（2026-11-17）
 
-## 2026-11-17 · 0.1.0 GitHub Release 已发布
+## 2026-11-17 · 0.1.0 GitHub＋Steam 已发布
 
-**0.1.0** 已在 [GitHub Release](https://github.com/SlayTheCircle/STS2-Linnea/releases/tag/v0.1.0) 公开发布，支持游戏 **0.107.1／0.113.0**，最低依赖 **RitsuLib 0.6.12**。源码提交 `fec7f9c` 与 annotated tag `v0.1.0` 已推送；main 的 Source checks／Compile check 及 tag 的 Release build 均通过。公开源码仓与组织私有美术仓已建立，美术输入提交为 `01b2ca5`，GitHub 私密漏洞报告已启用。
+**0.1.0** 已同步发布到 [GitHub Release](https://github.com/SlayTheCircle/STS2-Linnea/releases/tag/v0.1.0) 和 [Steam 工坊物品 3841137188](https://steamcommunity.com/sharedfiles/filedetails/?id=3841137188)，支持游戏 **0.107.1／0.113.0**，最低依赖 **RitsuLib 0.6.12**。源码提交 `fec7f9c` 与 annotated tag `v0.1.0` 已推送；main 的 Source checks／Compile check 及 tag 的 Release build 均通过。公开源码仓与组织私有美术仓已建立，美术输入提交为 `01b2ca5`，GitHub 私密漏洞报告已启用。
 
 草稿的三个 ZIP 与三个 SHA-256 附件已回下载，服务端摘要、ZIP 完整性、清单、跨包内容 DLL 与包结构均核对通过。0.107.1 与工坊 PCK 的封装字节不同，但两个目标各 603 项资源路径与内容 MD5 完全一致；两个 PCK 均通过本地化与资源断言。CI 附件的双目标 Loader 探针各发现 158 个模型，缺模型对照及旧依赖拒绝通过。
 
 实际 CI 工坊包已在 0.113.1 独立宿主中通过角色机制、房间边界恢复和普通对局回归；普通对局在 A1 第 11 层正常败北，协议错误和恢复操作均为 0，驱动与宿主退出码均为 0。该结果只作流程回归，不作强度评价。0.107.1 实机、真实双客户端联机及不同已有档／模组组合仍需后续验收。
 
-本轮只完成 GitHub 侧首发，**尚未创建或上传 Steam 工坊物品**；工坊发布材料使用本 Release 的工坊变体包，后续发布与线上回查另行执行。
+Steam 首发采用维护者选定的 **cover-v2**。线上物品的标题、公开可见性、发布者、应用与完整简介已回查；线上封面与 `cover-v2.jpg` 逐字节一致，首发中英变更说明已在 Change Notes 可见。通过 SteamCMD 重新下载物品后，全部 9 个文件与 GitHub 工坊包的路径及 SHA-256 完全一致。封面母版、生成记录及派生图已推送组织私有美术仓，提交为 `9c29036`。
+
+0.107.1 实机、真实双客户端联机及不同已有档／模组组合仍需后续验收；本轮未向本机正式游戏目录部署。
 
 ## 2026-11-17 · Mirror验收试玩反馈：海螺帮的遗赠
 

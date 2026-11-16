@@ -11,7 +11,8 @@
 
 | 问题 | 入口 |
 |---|---|
-| 玩法、使用与开发咨询 | 本仓库 GitHub Issues |
+| 玩法与使用咨询 | [Steam 工坊评论区](https://steamcommunity.com/sharedfiles/filedetails/?id=3841137188) |
+| 开发咨询 | 本仓库 GitHub Issues |
 | 可复现 Bug | [Bug 表单](.github/ISSUE_TEMPLATE/bug_report.yml) 提交 Issue |
 | 玩法或开发体验建议 | [建议表单](.github/ISSUE_TEMPLATE/feature_request.yml) 提交 Issue |
 | 安全漏洞 | 私密渠道，见 [SECURITY](SECURITY.md) |
@@ -24,4 +25,4 @@
 
 ## English summary
 
-Gameplay, usage, and development questions go to GitHub Issues; reproducible bugs and suggestions use the Issue forms. The latest release on the game branch noted in STATUS is supported; target platform is Windows/Steam. Response is best-effort. Security reporting is covered separately in SECURITY.md.
+Gameplay and usage questions go to the Steam Workshop comments; development questions, reproducible bugs, and suggestions use GitHub Issues and the Issue forms. The latest release on the game branch noted in STATUS is supported; target platform is Windows/Steam. Response is best-effort. Security reporting is covered separately in SECURITY.md.
