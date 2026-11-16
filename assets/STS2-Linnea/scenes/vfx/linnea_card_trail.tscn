@@ -1,0 +1,84 @@
+[gd_scene load_steps=10 format=3]
+
+; Native line aging/following is supplied by the game; the root is converted by RitsuLib.
+[ext_resource type="Script" path="res://src/Core/Nodes/Vfx/NCardTrail.cs" id="1_line"]
+[ext_resource type="Texture2D" path="res://images/packed/vfx/trail.png" id="2_trail"]
+[ext_resource type="Texture2D" path="res://images/packed/vfx/trail2.png" id="3_core"]
+[ext_resource type="Texture2D" path="res://STS2-Linnea/images/energy/linnea_spark.png" id="4_spark"]
+
+[sub_resource type="CanvasItemMaterial" id="Additive"]
+blend_mode = 1
+
+[sub_resource type="Gradient" id="PrimaryRibbon"]
+offsets = PackedFloat32Array(0, 0.4, 1)
+colors = PackedColorArray(0.9568627, 0.7294118, 0.8039216, 0, 0.9568627, 0.7294118, 0.8039216, 0.2, 0.9568627, 0.7294118, 0.8039216, 0.5)
+
+[sub_resource type="Gradient" id="BrightCore"]
+colors = PackedColorArray(1, 0.94, 0.8, 0, 1, 0.94, 0.8, 0.4)
+
+[sub_resource type="Gradient" id="SparkFade"]
+offsets = PackedFloat32Array(0, 0.2, 1)
+colors = PackedColorArray(0.9568627, 0.7294118, 0.8039216, 0, 0.9568627, 0.7294118, 0.8039216, 0.55, 0.9568627, 0.7294118, 0.8039216, 0)
+
+[sub_resource type="Curve" id="Taper"]
+_data = [Vector2(0, 0), 0.0, 1.0, 0, 0, Vector2(1, 1), 1.0, 0.0, 0, 0]
+point_count = 2
+
+[node name="LinneaCardTrail" type="Node2D"]
+show_behind_parent = true
+
+[node name="Trails" type="Node2D" parent="."]
+
+[node name="OuterTrail" type="Line2D" parent="Trails"]
+material = SubResource("Additive")
+width = 40.0
+width_curve = SubResource("Taper")
+gradient = SubResource("PrimaryRibbon")
+texture = ExtResource("2_trail")
+texture_mode = 2
+joint_mode = 2
+script = ExtResource("1_line")
+
+[node name="InnerTrail" type="Line2D" parent="Trails"]
+material = SubResource("Additive")
+width = 18.0
+width_curve = SubResource("Taper")
+gradient = SubResource("BrightCore")
+texture = ExtResource("3_core")
+texture_mode = 2
+joint_mode = 2
+script = ExtResource("1_line")
+
+[node name="Sprites" type="Node2D" parent="."]
+
+[node name="BigSparks" type="CPUParticles2D" parent="Sprites"]
+material = SubResource("Additive")
+amount = 12
+lifetime = 0.6
+randomness = 0.6
+texture = ExtResource("4_spark")
+emission_shape = 3
+emission_rect_extents = Vector2(12, 12)
+spread = 180.0
+gravity = Vector2(0, -4)
+initial_velocity_min = 8.0
+initial_velocity_max = 20.0
+scale_amount_min = 0.08
+scale_amount_max = 0.125
+color_ramp = SubResource("SparkFade")
+
+[node name="LittleSparks" type="CPUParticles2D" parent="Sprites"]
+material = SubResource("Additive")
+amount = 12
+lifetime = 0.3
+randomness = 0.6
+texture = ExtResource("4_spark")
+emission_shape = 3
+emission_rect_extents = Vector2(10, 10)
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 12.0
+initial_velocity_max = 28.0
+scale_amount_min = 0.04
+scale_amount_max = 0.07
+color_ramp = SubResource("SparkFade")

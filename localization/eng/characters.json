@@ -1,0 +1,18 @@
+{
+  "STS2_LINNEA_CHARACTER_LINNEA.title": "Linnea",
+  "STS2_LINNEA_CHARACTER_LINNEA.titleObject": "Linnea",
+  "STS2_LINNEA_CHARACTER_LINNEA.description": "A fairy adventurer exploring the Spire with Lumi.",
+  "STS2_LINNEA_CHARACTER_LINNEA.unlockText": "Available once installed.",
+  "STS2_LINNEA_CHARACTER_LINNEA.aromaPrinciple": "",
+  "STS2_LINNEA_CHARACTER_LINNEA.bestiaryQuote": "Not yet written.",
+  "STS2_LINNEA_CHARACTER_LINNEA.cardsModifierTitle": "",
+  "STS2_LINNEA_CHARACTER_LINNEA.cardsModifierDescription": "",
+  "STS2_LINNEA_CHARACTER_LINNEA.eventDeathPrevention": "",
+  "STS2_LINNEA_CHARACTER_LINNEA.goldMonologue": "",
+  "STS2_LINNEA_CHARACTER_LINNEA.possessiveAdjective": "her",
+  "STS2_LINNEA_CHARACTER_LINNEA.pronounObject": "her",
+  "STS2_LINNEA_CHARACTER_LINNEA.pronounPossessive": "her",
+  "STS2_LINNEA_CHARACTER_LINNEA.pronounSubject": "she",
+  "STS2_LINNEA_CHARACTER_LINNEA.banter.alive.endTurnPing": "My turn.",
+  "STS2_LINNEA_CHARACTER_LINNEA.banter.dead.endTurnPing": "...it's up to you."
+}

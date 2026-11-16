@@ -1,0 +1,17 @@
+{
+  "STORY_LINNEA": "Linnea",
+  "STS2_LINNEA_EPOCH_1.title": "Endless Exploration",
+  "STS2_LINNEA_EPOCH_1.description": "As an advisor to the Adventurers’ Guild, Linnea has traveled throughout Teyvat, exploring wonders and hidden places that no one has reached before.\n\nSo when word came that the Spire had opened, her eyes shone brighter than ever.\n\n“Let’s go, Lumi! A new adventure awaits!”",
+  "STS2_LINNEA_EPOCH_1.unlockInfo": "Finish a run as the Ironclad, including abandoning a run.",
+  "STS2_LINNEA_EPOCH_1.unlockText": "Unlock Linnea as a playable character.",
+  "STS2_LINNEA_EPOCH_2.title": "A Bigger Bestiary!",
+  "STS2_LINNEA_EPOCH_2.description": "The Spire yielded more discoveries than she had imagined. Beyond its unheard-of treasures, its creatures were astonishingly diverse.\n\nWith every climb, Linnea added several pages to her natural history guide.\n\nAs for Linnea herself… she was already completely absorbed in observing its marvelous inhabitants. What wonderful news.",
+  "STS2_LINNEA_EPOCH_2.unlockInfo": "Win a run as Linnea.",
+  "STS2_LINNEA_EPOCH_3.title": "The Mysterious Ancients",
+  "STS2_LINNEA_EPOCH_3.description": "During her climbs, Linnea met many of the Ancients.\n\nSome were curious, some awkward; some slumbered at the bottom, while others had lived in the Spire for ages… None of that seemed to concern her.\n\nFortunately, her habit of touching them never seemed to put her in danger.",
+  "STS2_LINNEA_EPOCH_3.unlockInfo": "Defeat 3 bosses in total as Linnea.",
+  "STS2_LINNEA_EPOCH_4.title": "An Unfriendly Welcome?",
+  "STS2_LINNEA_EPOCH_4.description": "At last Linnea reached the summit. Neither treasure nor fascinating creatures awaited her there.\n\nThe man who called himself the Architect simply sent her back to the foot of the Spire, again and again, without tiring.\n\nOf course—he must be guarding the Spire’s secrets!",
+  "STS2_LINNEA_EPOCH_4.unlockInfo": "Win an Ascension 1 run as Linnea.",
+  "STS2_LINNEA_EPOCH_1.unlock": "Linnea unlocked!"
+}

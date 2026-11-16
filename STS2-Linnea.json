@@ -1,0 +1,18 @@
+{
+  "id": "STS2-Linnea",
+  "pck_name": "STS2-Linnea",
+  "name": "莉奈娅 | Linnea",
+  "author": "SlayTheCircle",
+  "description": "莉奈娅角色模组。A Slay the Spire 2 mod.",
+  "version": "0.1.0",
+  "has_pck": true,
+  "has_dll": true,
+  "affects_gameplay": true,
+  "dependencies": [
+    {
+      "id": "STS2-RitsuLib",
+      "min_version": "0.6.12"
+    }
+  ],
+  "min_game_version": "0.107.1"
+}

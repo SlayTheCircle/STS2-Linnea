@@ -1,0 +1,20 @@
+{
+  "STS2_LINNEA_RELIC_ADVENTURE_NOTES.title": "Adventure Notes",
+  "STS2_LINNEA_RELIC_ADVENTURE_NOTES.description": "At the start of combat, generate Lumi in your hand.",
+  "STS2_LINNEA_RELIC_ADVENTURE_NOTES.flavor": "",
+  "STS2_LINNEA_RELIC_CONCH_GANG_LEGACY.title": "Conch Gang Legacy",
+  "STS2_LINNEA_RELIC_CONCH_GANG_LEGACY.description": "At the start of combat, generate Lumi+ in your hand. At the start of each turn, Encourage 4.",
+  "STS2_LINNEA_RELIC_CONCH_GANG_LEGACY.flavor": "",
+  "STS2_LINNEA_RELIC_GOLDEN_HOUND_MODEL.title": "Golden Hound Miniature",
+  "STS2_LINNEA_RELIC_GOLDEN_HOUND_MODEL.description": "The first time you deal damage each turn, gain 4 Foreknowledge.",
+  "STS2_LINNEA_RELIC_GOLDEN_HOUND_MODEL.flavor": "",
+  "STS2_LINNEA_RELIC_PET_BACKPACK.title": "Pet Backpack",
+  "STS2_LINNEA_RELIC_PET_BACKPACK.description": "After playing Lumi, gain 6 Block and Encourage 2.",
+  "STS2_LINNEA_RELIC_PET_BACKPACK.flavor": "",
+  "STS2_LINNEA_RELIC_FESTIVAL_CERTIFICATE.title": "Spirit Envoy Tournament Certificate",
+  "STS2_LINNEA_RELIC_FESTIVAL_CERTIFICATE.description": "When you would take unblocked attack damage, reduce it by 6 and discard Lumi if it is in your hand.",
+  "STS2_LINNEA_RELIC_FESTIVAL_CERTIFICATE.flavor": "",
+  "STS2_LINNEA_RELIC_SUPER_LUMI.title": "Super Lumi!",
+  "STS2_LINNEA_RELIC_SUPER_LUMI.description": "Whenever you generate Lumi, Upgrade it.",
+  "STS2_LINNEA_RELIC_SUPER_LUMI.flavor": ""
+}

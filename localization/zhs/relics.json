@@ -1,0 +1,20 @@
+{
+  "STS2_LINNEA_RELIC_ADVENTURE_NOTES.title": "冒险考察笔记",
+  "STS2_LINNEA_RELIC_ADVENTURE_NOTES.description": "战斗开始时，在手牌中生成1张露米。",
+  "STS2_LINNEA_RELIC_ADVENTURE_NOTES.flavor": "",
+  "STS2_LINNEA_RELIC_CONCH_GANG_LEGACY.title": "海螺帮的遗赠",
+  "STS2_LINNEA_RELIC_CONCH_GANG_LEGACY.description": "战斗开始时，在手牌中生成1张露米+。每回合开始时，鼓励4。",
+  "STS2_LINNEA_RELIC_CONCH_GANG_LEGACY.flavor": "",
+  "STS2_LINNEA_RELIC_GOLDEN_HOUND_MODEL.title": "黄金猎犬号微缩模型",
+  "STS2_LINNEA_RELIC_GOLDEN_HOUND_MODEL.description": "每回合第一次造成伤害时，预知4。",
+  "STS2_LINNEA_RELIC_GOLDEN_HOUND_MODEL.flavor": "",
+  "STS2_LINNEA_RELIC_PET_BACKPACK.title": "宠物背包",
+  "STS2_LINNEA_RELIC_PET_BACKPACK.description": "打出露米后，获得6点格挡，鼓励2。",
+  "STS2_LINNEA_RELIC_PET_BACKPACK.flavor": "",
+  "STS2_LINNEA_RELIC_FESTIVAL_CERTIFICATE.title": "[灵使竞冠祭礼]大赛纪念奖状",
+  "STS2_LINNEA_RELIC_FESTIVAL_CERTIFICATE.description": "即将受到未被格挡的攻击伤害时，如果手中有露米，减少6点伤害，然后丢弃露米。",
+  "STS2_LINNEA_RELIC_FESTIVAL_CERTIFICATE.flavor": "",
+  "STS2_LINNEA_RELIC_SUPER_LUMI.title": "超级露米！",
+  "STS2_LINNEA_RELIC_SUPER_LUMI.description": "生成露米时，将其升级。",
+  "STS2_LINNEA_RELIC_SUPER_LUMI.flavor": ""
+}

@@ -1,0 +1,237 @@
+{
+  "textures": {
+    "res://STS2-Linnea/images/ui/CultivateRestSiteOption.png": {
+      "size": [
+        256,
+        256
+      ],
+      "transparent": false
+    },
+    "res://STS2-Linnea/images/events/JungleDiscovery.png": {
+      "size": [
+        1672,
+        941
+      ],
+      "transparent": false
+    },
+    "res://STS2-Linnea/images/events/OreCollector.png": {
+      "size": [
+        1672,
+        941
+      ],
+      "transparent": false
+    },
+    "res://STS2-Linnea/images/events/SpiritInTheDust.png": {
+      "size": [
+        1672,
+        941
+      ],
+      "transparent": false
+    },
+    "res://STS2-Linnea/images/timeline/sts2_linnea_epoch_1_thumb.png": {
+      "size": [
+        272,
+        174
+      ]
+    },
+    "res://images/timeline/epoch_portraits/sts2_linnea_epoch_1.png": {
+      "size": [
+        1672,
+        941
+      ]
+    },
+    "res://STS2-Linnea/images/timeline/sts2_linnea_epoch_2_thumb.png": {
+      "size": [
+        272,
+        174
+      ]
+    },
+    "res://images/timeline/epoch_portraits/sts2_linnea_epoch_2.png": {
+      "size": [
+        1672,
+        941
+      ]
+    },
+    "res://STS2-Linnea/images/timeline/sts2_linnea_epoch_3_thumb.png": {
+      "size": [
+        272,
+        174
+      ]
+    },
+    "res://images/timeline/epoch_portraits/sts2_linnea_epoch_3.png": {
+      "size": [
+        1672,
+        941
+      ]
+    },
+    "res://STS2-Linnea/images/timeline/sts2_linnea_epoch_4_thumb.png": {
+      "size": [
+        272,
+        174
+      ]
+    },
+    "res://images/timeline/epoch_portraits/sts2_linnea_epoch_4.png": {
+      "size": [
+        1672,
+        941
+      ]
+    },
+    "res://STS2-Linnea/images/characters/linnea_normal.png": {
+      "size": [
+        378,
+        648
+      ],
+      "transparent": true
+    },
+    "res://STS2-Linnea/images/characters/linnea_attack.png": {
+      "size": [
+        432,
+        648
+      ],
+      "transparent": true
+    },
+    "res://STS2-Linnea/images/characters/linnea_cast.png": {
+      "size": [
+        378,
+        648
+      ],
+      "transparent": true
+    },
+    "res://STS2-Linnea/images/characters/linnea_down.png": {
+      "size": [
+        648,
+        216
+      ],
+      "transparent": true
+    },
+    "res://STS2-Linnea/images/characters/linnea_merchant.png": {
+      "size": [
+        377,
+        648
+      ],
+      "transparent": true
+    },
+    "res://STS2-Linnea/images/characters/linnea_rest_site.png": {
+      "size": [
+        615,
+        648
+      ],
+      "transparent": true
+    },
+    "res://STS2-Linnea/images/characters/linnea_lumi_attack.png": {
+      "size": [
+        972,
+        648
+      ],
+      "transparent": true
+    },
+    "res://STS2-Linnea/images/characters/linnea_char_select_bg.png": {
+      "size": [
+        1672,
+        941
+      ]
+    },
+    "res://STS2-Linnea/images/characters/linnea_char_select.png": {
+      "size": [
+        264,
+        390
+      ],
+      "transparent": true
+    },
+    "res://STS2-Linnea/images/characters/linnea_char_select_locked.png": {
+      "size": [
+        264,
+        390
+      ],
+      "transparent": true
+    },
+    "res://STS2-Linnea/images/characters/linnea_icon.png": {
+      "size": [
+        88,
+        88
+      ],
+      "transparent": true
+    },
+    "res://STS2-Linnea/images/characters/linnea_icon_outline.png": {
+      "size": [
+        88,
+        88
+      ],
+      "transparent": true
+    },
+    "res://STS2-Linnea/images/characters/linnea_map_marker.png": {
+      "size": [
+        64,
+        64
+      ],
+      "transparent": true
+    },
+    "res://STS2-Linnea/images/energy/linnea_energy_big.png": {
+      "size": [
+        256,
+        256
+      ],
+      "transparent": true
+    },
+    "res://STS2-Linnea/images/energy/linnea_energy_text.png": {
+      "size": [
+        24,
+        24
+      ],
+      "transparent": true
+    },
+    "res://STS2-Linnea/images/energy/linnea_spark.png": {
+      "size": [
+        64,
+        64
+      ],
+      "transparent": true
+    },
+    "res://STS2-Linnea/images/energy/linnea_glow.png": {
+      "size": [
+        128,
+        128
+      ],
+      "transparent": true
+    },
+    "res://STS2-Linnea/images/hands/linnea_point.png": {
+      "size": [
+        422,
+        1200
+      ],
+      "transparent": true
+    },
+    "res://STS2-Linnea/images/hands/linnea_rock.png": {
+      "size": [
+        422,
+        1200
+      ],
+      "transparent": true
+    },
+    "res://STS2-Linnea/images/hands/linnea_paper.png": {
+      "size": [
+        422,
+        1200
+      ],
+      "transparent": true
+    },
+    "res://STS2-Linnea/images/hands/linnea_scissors.png": {
+      "size": [
+        422,
+        1200
+      ],
+      "transparent": true
+    }
+  },
+  "files": [
+    "res://STS2-Linnea/scenes/characters/linnea_character.tscn",
+    "res://STS2-Linnea/scenes/characters/linnea_rest_site.tscn",
+    "res://STS2-Linnea/scenes/characters/linnea_merchant.tscn",
+    "res://STS2-Linnea/scenes/characters/linnea_char_select_bg.tscn",
+    "res://STS2-Linnea/scenes/characters/linnea_icon.tscn",
+    "res://STS2-Linnea/scenes/characters/rig/linnea_combat.tscn",
+    "res://STS2-Linnea/scenes/combat/linnea_energy_counter.tscn",
+    "res://STS2-Linnea/scenes/vfx/linnea_card_trail.tscn",
+    "res://STS2-Linnea/materials/cards/linnea_frame.tres"
+  ]
+}

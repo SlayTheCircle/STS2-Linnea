@@ -1,0 +1,8 @@
+{
+  "STS2_LINNEA_KEYWORD_ENCOURAGE.title": "鼓励",
+  "STS2_LINNEA_KEYWORD_ENCOURAGE.description": "使本场战斗中露米的伤害增加相应数值。你的回合结束时，将鼓励减半（向下取整），然后获得等同于失去鼓励层数的格挡。获得鼓励时，若战斗牌组中没有露米，将其加入手牌。",
+  "STS2_LINNEA_KEYWORD_FOREKNOWLEDGE.title": "预知",
+  "STS2_LINNEA_KEYWORD_FOREKNOWLEDGE.description": "显示抽牌堆顶相应张数的顺序，每抽1张消耗1层。每累计获得7层，查看顶牌并选择抽1张或消耗它。",
+  "STS2_LINNEA_KEYWORD_EXCAVATE.title": "采掘",
+  "STS2_LINNEA_KEYWORD_EXCAVATE.description": "在手牌中生成1张不能打出、保留的矿石。"
+}

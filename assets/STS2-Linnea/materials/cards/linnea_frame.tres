@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3]
+
+[ext_resource type="Shader" path="res://STS2-Linnea/shaders/linnea_frame.gdshader" id="1_theme"]
+
+[resource]
+shader = ExtResource("1_theme")
+shader_parameter/theme_color = Color(0.9568627, 0.7294118, 0.8039216, 1)

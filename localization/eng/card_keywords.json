@@ -1,0 +1,8 @@
+{
+  "STS2_LINNEA_KEYWORD_ENCOURAGE.title": "Encourage",
+  "STS2_LINNEA_KEYWORD_ENCOURAGE.description": "Increase Lumi’s damage by this amount. At the end of your turn, halve Encouragement (round down), then gain Block equal to the amount lost. When you gain Encouragement, add Lumi to your hand if it is absent from your combat deck.",
+  "STS2_LINNEA_KEYWORD_FOREKNOWLEDGE.title": "Foreknowledge",
+  "STS2_LINNEA_KEYWORD_FOREKNOWLEDGE.description": "Reveal this many top cards in order; each draw spends 1 stack. Every 7 stacks gained lets you draw or exhaust the top card.",
+  "STS2_LINNEA_KEYWORD_EXCAVATE.title": "Excavate",
+  "STS2_LINNEA_KEYWORD_EXCAVATE.description": "Generate an unplayable, Retained Ore in your hand."
+}

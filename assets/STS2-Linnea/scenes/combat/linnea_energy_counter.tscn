@@ -1,0 +1,140 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Texture2D" path="res://STS2-Linnea/images/energy/linnea_energy_big.png" id="1_orb"]
+[ext_resource type="Texture2D" path="res://STS2-Linnea/images/energy/linnea_spark.png" id="2_spark"]
+[ext_resource type="Texture2D" path="res://STS2-Linnea/images/energy/linnea_glow.png" id="3_glow"]
+
+[sub_resource type="CanvasItemMaterial" id="Additive"]
+blend_mode = 1
+
+[sub_resource type="Gradient" id="SparkFade"]
+colors = PackedColorArray(0.9568627, 0.7294118, 0.8039216, 0.8, 0.9568627, 0.7294118, 0.8039216, 0)
+
+[sub_resource type="GradientTexture1D" id="SparkColors"]
+gradient = SubResource("SparkFade")
+
+[sub_resource type="ParticleProcessMaterial" id="SparkMotion"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 46.0
+direction = Vector3(0, -1, 0)
+spread = 180.0
+initial_velocity_min = 12.0
+initial_velocity_max = 28.0
+gravity = Vector3(0, -6, 0)
+scale_min = 0.05
+scale_max = 0.1
+color_ramp = SubResource("SparkColors")
+
+[sub_resource type="ParticleProcessMaterial" id="FrontMotion"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 38.0
+spread = 180.0
+initial_velocity_min = 8.0
+initial_velocity_max = 18.0
+gravity = Vector3(0, -4, 0)
+scale_min = 0.035
+scale_max = 0.065
+color_ramp = SubResource("SparkColors")
+
+; RitsuLib converts this ordinary Control and its named slots to native game nodes.
+[node name="LinneaEnergyCounter" type="Control"]
+layout_mode = 3
+offset_right = 128.0
+offset_bottom = 128.0
+pivot_offset = Vector2(64, 64)
+
+[node name="EnergyVfxBack" type="Node2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(64, 64)
+
+[node name="Sparks" type="GPUParticles2D" parent="EnergyVfxBack"]
+material = SubResource("Additive")
+emitting = false
+amount = 8
+texture = ExtResource("2_spark")
+lifetime = 0.6
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("SparkMotion")
+
+[node name="Layers" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Glow" type="TextureRect" parent="Layers"]
+self_modulate = Color(0.9568627, 0.7294118, 0.8039216, 0.24)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("3_glow")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="RotationLayers" type="Control" parent="Layers"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Orb" type="TextureRect" parent="Layers/RotationLayers"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(64, 64)
+mouse_filter = 2
+texture = ExtResource("1_orb")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="EnergyVfxFront" type="Node2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(64, 64)
+
+[node name="Sparks" type="GPUParticles2D" parent="EnergyVfxFront"]
+material = SubResource("Additive")
+emitting = false
+amount = 4
+texture = ExtResource("2_spark")
+lifetime = 0.4
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("FrontMotion")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = -29.0
+offset_right = -16.0
+offset_bottom = 29.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.964706, 0.886275, 1)
+theme_override_colors/font_outline_color = Color(0.3411765, 0.2039216, 0.3725490, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 36
+text = "3/3"
+horizontal_alignment = 1
+vertical_alignment = 1

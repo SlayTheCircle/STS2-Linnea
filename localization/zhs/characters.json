@@ -1,0 +1,18 @@
+{
+  "STS2_LINNEA_CHARACTER_LINNEA.title": "莉奈娅",
+  "STS2_LINNEA_CHARACTER_LINNEA.titleObject": "莉奈娅",
+  "STS2_LINNEA_CHARACTER_LINNEA.description": "带着露米探索高塔的妖精冒险家。",
+  "STS2_LINNEA_CHARACTER_LINNEA.unlockText": "安装后即可游玩。",
+  "STS2_LINNEA_CHARACTER_LINNEA.aromaPrinciple": "",
+  "STS2_LINNEA_CHARACTER_LINNEA.bestiaryQuote": "尚未书写。",
+  "STS2_LINNEA_CHARACTER_LINNEA.cardsModifierTitle": "",
+  "STS2_LINNEA_CHARACTER_LINNEA.cardsModifierDescription": "",
+  "STS2_LINNEA_CHARACTER_LINNEA.eventDeathPrevention": "",
+  "STS2_LINNEA_CHARACTER_LINNEA.goldMonologue": "",
+  "STS2_LINNEA_CHARACTER_LINNEA.possessiveAdjective": "她的",
+  "STS2_LINNEA_CHARACTER_LINNEA.pronounObject": "她",
+  "STS2_LINNEA_CHARACTER_LINNEA.pronounPossessive": "她的",
+  "STS2_LINNEA_CHARACTER_LINNEA.pronounSubject": "她",
+  "STS2_LINNEA_CHARACTER_LINNEA.banter.alive.endTurnPing": "该我了。",
+  "STS2_LINNEA_CHARACTER_LINNEA.banter.dead.endTurnPing": "……交给你了。"
+}
