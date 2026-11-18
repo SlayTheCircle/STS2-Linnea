@@ -2,7 +2,9 @@
 
 [简体中文](README.md)
 
-A playable Linnea character mod for Slay the Spire 2, built around Lumi, Encouragement, Foreknowledge, and Ore. It supports both game branches: 0.107.1 (stable) and 0.113.0 (beta). See [STATUS.md](STATUS.md) for implemented state and limits.
+A playable Linnea character mod for Slay the Spire 2, built around Lumi, Encouragement, Foreknowledge, and Ore. See [STATUS.md](STATUS.md) for implemented state and limits.
+
+Support follows only the latest version of each official game branch (stable and beta); older versions receive no LTS or ongoing compatibility maintenance. See the [versioning policy](docs/dev/versioning.md).
 
 ## Download and installation
 
