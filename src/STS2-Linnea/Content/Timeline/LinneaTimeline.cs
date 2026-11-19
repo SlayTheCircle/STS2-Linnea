@@ -30,8 +30,6 @@ internal sealed class LinneaTimeline : IModTypeDiscoveryContributor
         ModTimelineLayoutRegistry.RegisterAutoTimelineSlotInEpochColumn(typeof(Linnea4Epoch), typeof(Linnea1Epoch), ModEntry.ModId);
 
         var unlocks = ModUnlockRegistry.For(ModEntry.ModId);
-        unlocks.RequireEpoch<Characters.Linnea, Linnea1Epoch>();
-        // The design names the unlock but does not specify a trigger. Use an already available character.
         unlocks.UnlockCharacterAfterRunAs(typeof(Ironclad), typeof(Linnea1Epoch));
         foreach (var type in new Linnea2Epoch().EnumerateUnlockCardTypes())
             unlocks.RequireEpoch(type, typeof(Linnea2Epoch));

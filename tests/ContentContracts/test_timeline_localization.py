@@ -29,7 +29,7 @@ class TimelineLocalizationContract(unittest.TestCase):
             for language in ('zhs', 'eng'):
                 path = fixture / 'localization' / language / 'epochs.json'
                 original = json.loads(path.read_text())
-                for ending in ('.title', '.description', '.unlockInfo', '.unlockText', '.unlock'):
+                for ending in ('.title', '.description', '.unlockInfo', '.unlockText'):
                     key = next(k for k in original if k.endswith(ending))
                     values = original.copy()
                     del values[key]

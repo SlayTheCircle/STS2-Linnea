@@ -27,7 +27,10 @@ for language in ('zhs', 'eng'):
             errors.append(f'{model.name}: epoch Id must be explicit')
             continue
         fields = ['title', 'description', 'unlockInfo']
-        if any(a.parent == 'CharacterUnlockEpochTemplate' for a in index.lineage(model)): fields.extend(['unlockText', 'unlock'])
+        if any(a.parent in {'ModEpochTemplate', 'CharacterUnlockEpochTemplate'} for a in index.lineage(model)):
+            fields.append('unlockText')
+        if any(a.parent == 'CharacterUnlockEpochTemplate' for a in index.lineage(model)):
+            fields.append('unlock')
         for field in fields:
             key = match[1] + '.' + field
             if not values.get(key): errors.append(f'{language}: missing {key}')

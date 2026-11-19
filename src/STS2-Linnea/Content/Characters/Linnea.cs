@@ -27,7 +27,7 @@ public sealed class Linnea : CharacterModel, IModCreatureCombatAnimationStateMac
 
     public override CharacterGender Gender => CharacterGender.Feminine;
 
-    // 角色门控由世界线第一章的 RequireEpoch 维护。
+    // 角色订阅后直接可用；世界线第一章只记录进度，不门控角色。
     protected override CharacterModel? UnlocksAfterRunAs => null;
 
     public override int StartingHp => 88;

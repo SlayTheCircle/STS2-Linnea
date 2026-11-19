@@ -8,7 +8,7 @@
 
 ## 获取与安装
 
-当前版本为 **0.1.0**。推荐通过 [Steam 工坊](https://steamcommunity.com/sharedfiles/filedetails/?id=3841137188)订阅，并一并订阅 **RitsuLib 0.6.12 或更高版本**；工坊物品会按当前游戏分支自动选择内容 DLL。也可从 [GitHub Releases](https://github.com/SlayTheCircle/STS2-Linnea/releases) 下载对应游戏目标的安装包，将其中 `STS2-Linnea/` 目录放入游戏 `mods/`。
+当前源码版本为 **0.1.1**。推荐通过 [Steam 工坊](https://steamcommunity.com/sharedfiles/filedetails/?id=3841137188)订阅，并一并订阅 **RitsuLib 0.6.12 或更高版本**；工坊物品会按当前游戏分支自动选择内容 DLL。也可从 [GitHub Releases](https://github.com/SlayTheCircle/STS2-Linnea/releases) 下载对应游戏目标的安装包，将其中 `STS2-Linnea/` 目录放入游戏 `mods/`。
 
 安装或覆盖前请关闭游戏，并保留旧版本包以便回退。源码仓不包含美术母版，单独编译 DLL 不构成可安装的完整包。
 

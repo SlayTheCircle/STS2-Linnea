@@ -4,6 +4,18 @@
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-11-19
+
+### 修复 / Fixed
+
+- 莉奈娅在订阅并启用后立即可以选用，不再要求先以铁甲战士结束一局；四章世界线及后三章奖励解锁保留，第一章只记录进度，不再重复播放角色解锁。
+- Linnea is now available as soon as the mod is installed and enabled, without first finishing a run as the Ironclad. All four worldline chapters and the later reward gates remain; chapter one records progress without repeating the character-unlock sequence.
+
+### 兼容 / Compatibility
+
+- 安装包支持游戏 0.107.1／0.113.1，最低依赖 RitsuLib 0.6.12；不再提供 0.113.0 内容变体。
+- Supports game versions 0.107.1 / 0.113.1 and requires RitsuLib 0.6.12 or newer. The 0.113.0 content variant is no longer included.
+
 ## [0.1.0] - 2026-11-17
 
 首个公开版本。 / First public release.

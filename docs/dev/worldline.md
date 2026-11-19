@@ -20,6 +20,12 @@
 
 故事 Id 是 StoryKey 经原版 Slugify 得到的键，示例为 `STS2_LINNEA_EXAMPLE`；epoch 的 Id 是显式稳定键，衍生时随模板身份改写，之后不要随标题变更。两语言 epochs 表维护 `STORY_<StoryId>`、`EpochId.title/description/unlockInfo`；角色解锁章还供 `unlockText`，三池解锁章用模板生成 UnlockText。文本示例在 [zhs](../../examples/localization/zhs/epochs.json)／[eng](../../examples/localization/eng/epochs.json)。本例编译不意味着自然进度与三池门控已经游戏内通过。
 
+## 本仓角色直接可用
+
+上述两章例子演示带角色解锁门槛的接线，不是本仓角色的现行门槛。莉奈娅订阅并启用后即可选用，不得对角色本体调用 `RequireEpoch`。`Linnea1Epoch` 直接继承 `ModEpochTemplate` 并覆写 `GetTimelineExpansion` 与 `QueueUnlocks`；后者只排队后三章的时间线展开，不继承 `CharacterUnlockEpochTemplate<TCharacter>` 的角色解锁流程，避免在结算时再次排队播放角色解锁。普通基类的 `QueueUnlocks` 为空，仅实现 `GetTimelineExpansion` 不会完成展开。
+
+第一章仍通过 `UnlockCharacterAfterRunAs(typeof(Ironclad), typeof(Linnea1Epoch))` 在以铁甲战士结束一局后自然揭示；这里注册的是章节进度，不是角色使用资格。普通 `ModEpochTemplate` 的原生 `UnlockText` 读取 `EpochId.unlockText`，因此首章保留说明后续章节展开的双语文本，但不再消费角色奖励页的 `.unlock` 键。第二至四章的卡牌、遗物和药水门槛不变。
+
 ## 纪元肖像（全局资源）
 
 纪元肖像是**两个独立资源槽**：大图按全局 `res://images/timeline/epoch_portraits/<键>.png` 推导（放 `assets/global/`，打包器保留全局路径，不能套用普通 Mod 前缀）；缩略图原版走 epoch_atlas 图集、mod 无图集条目会显示 NOPE，须经各纪元类的 AssetProfile.PackedPortraitPath 覆盖指向 `res://<ModId>/images/timeline/` 下的派生图（从大图裁切 272×174）。
@@ -43,6 +49,6 @@ RitsuLib 根据 `localization/{lang}/ancients.json` 自动组装对话。键族�
 
 分别确认新档与已有档的角色可用性、揭示条件、奖励 UI、三池过滤、纪元图、先古对话。按[验证纪律](testing.md)记录各项证据。
 
-角色未解锁、刚获得第一章、刚获胜取得三卡章，以及已有档已解锁各阶段都要观察自然路径。不能只看解锁提示；进入时间线本身，确认两图、故事列、标题与三池奖励。注册 ERROR 即使没有 Exception/NOPE，也需要逐条处理；triage-log.sh 的退出码不是验收结果。
+对带角色门槛的 Mod，角色未解锁、刚获得第一章、刚获胜取得三卡章及已有档各阶段都要观察自然路径。本仓则必须直接用零进度存档确认原生选人按钮未锁定，不能以 `DebugUnlock()` 或 `UnlockState.all` 代替；还要观察第一章自然揭示、后三章奖励和已有档。进入时间线本身，确认两图、故事列、标题与三池奖励，不能只看解锁提示。注册 ERROR 即使没有 Exception/NOPE，也需要逐条处理；triage-log.sh 的退出码不是验收结果。
 
-角色解锁章同时需要 `.unlock`（原生角色解锁奖励页标题）与 `.unlockText`（说明），不能只提供时间线预览文字。`.unlockInfo` 应与实际条件一致：当前第一章沿用原生铁甲战士结算，包含放弃。`audit-timeline-contract.py` 和破坏性缺键用例覆盖这两个消费键。
+使用 `CharacterUnlockEpochTemplate<TCharacter>` 的角色解锁章需要 `.unlock`（原生角色解锁奖励页标题）与 `.unlockText`（说明），不能只提供时间线预览文字；本仓首章已改为普通 `ModEpochTemplate`，只消费 `.unlockText`。各章 `.unlockInfo` 应与实际条件一致：当前第一章沿用原生铁甲战士结算，包含放弃。`audit-timeline-contract.py` 和破坏性缺键用例按实际基类覆盖这些消费键。

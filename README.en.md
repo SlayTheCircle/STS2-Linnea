@@ -8,7 +8,7 @@ Support follows only the latest version of each official game branch (stable and
 
 ## Download and installation
 
-The current version is **0.1.0**. Subscribe through the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3841137188) together with **RitsuLib 0.6.12 or newer**; the Workshop item automatically selects the content DLL for the active game branch. Alternatively, download the package for your game branch from [GitHub Releases](https://github.com/SlayTheCircle/STS2-Linnea/releases) and place the included `STS2-Linnea/` directory in the game's `mods/` folder.
+The current source version is **0.1.1**. Subscribe through the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3841137188) together with **RitsuLib 0.6.12 or newer**; the Workshop item automatically selects the content DLL for the active game branch. Alternatively, download the package for your game branch from [GitHub Releases](https://github.com/SlayTheCircle/STS2-Linnea/releases) and place the included `STS2-Linnea/` directory in the game's `mods/` folder.
 
 Close the game before installing or replacing files, and keep the previous package for rollback. Art masters are not included in the source repository; compiling the DLL alone does not produce an installable package.
 
