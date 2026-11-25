@@ -20,6 +20,7 @@ public static class ModEntry
         // 归属声明:让本程序集内的 RitsuLib 自动注册特性([RegisterCard]/[RegisterCharacter]/…)正确归属到本 mod。
         // 必须第一条;模型由特性注册；世界线在类型发现后接入复合ID，本入口只登记模块。
         ModTypeDiscoveryHub.RegisterModAssembly(ModId, typeof(ModEntry).Assembly);
+        Sts2Mod.Foreseer.LinneaForecasts.Subscribe(ModId);
 
         // 机制关键词注册(有机制名词时启用;文本在 localization/{lang}/card_keywords.json):
         //   ModKeywordRegistry.For(ModId).RegisterCardKeywordOwnedByLocNamespace("MYMECHANIC");

@@ -75,7 +75,6 @@ public sealed class Linnea : CharacterModel, IModCreatureCombatAnimationStateMac
     // 原稿没有音频，转场使用原版通用擦拭反馈。
     public override string CharacterTransitionSfx => "event:/sfx/ui/wipe_ironclad";
 
-#if !MOD_GAME_0107_1
     // 0.107.1 无此虚属性,其 GenerateAnimator 硬编码的默认映射与本覆写逐项相同,省略即等价。
     protected override List<(AnimState, string)> AnimationStates => new List<(AnimState, string)>
     {
@@ -83,7 +82,6 @@ public sealed class Linnea : CharacterModel, IModCreatureCombatAnimationStateMac
         (new AnimState("hurt"), "Hit"),
         (new AnimState("cast"), "Cast"),
     };
-#endif
 
     public override List<string> GetArchitectAttackVfx()
     {
